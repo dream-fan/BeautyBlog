@@ -1,45 +1,45 @@
 BeautyBlog 项目开发文档
-搭建项目框架
-创建项目目录 新建一个文件夹，命名为BeautyBlog
-在BeautyBlog 里新建server和 frontend两个目录
-使用git init命令初始化，创建.gitignore文件【把不需要上传到github中的的文件放到此目录下】
-创建用touch .gitignore命令
-查看用ls -a命令
-vim .gitignore 打开写不需要上传的目录
-按i键写
-写完按ESC退
-输入：号，wq  【或按shift加zz】
-进入frontend,执行vue init webpack,把当前目录初始化成vue项目
- 安装axios		npm install axios --save
-安装vuex			npm install vuex --save
-安装element-ui	npm install element-ui --save
-配置element-ui   在main.js中配置
-    				import ElementUI from 'element-ui';
-    import 'element-ui/lib/theme-chalk/index.css';
-
-    Vue.use(ElementUI);
-安装express应用生成器
-npm install express-generator -g
-		cd server 进入server目录
-		执行 express
-		npm install 安装依赖
-		安装mongoose
-		npm install --save mongoose
-现在项目目录结构
-	   	添加readme.md
-f.把项目上传到仓库中
+	搭建项目框架
+	a.创建项目目录 新建一个文件夹，命名为BeautyBlog
+	在BeautyBlog 里新建server和 frontend两个目录
+	使用git init命令初始化，创建.gitignore文件【把不需要上传到github中的的文件放到此目录下】
+	创建用touch .gitignore命令
+	查看用ls -a命令
+	vim .gitignore 打开写不需要上传的目录
+	按i键写
+	写完按ESC退
+	输入：号，wq  【或按shift加zz】
+	进入frontend,执行vue init webpack,把当前目录初始化成vue项目
+	 安装axios		npm install axios --save
+	安装vuex			npm install vuex --save
+	安装element-ui	npm install element-ui --save
+	配置element-ui   在main.js中配置
+	    				import ElementUI from 'element-ui';
+	    import 'element-ui/lib/theme-chalk/index.css';
 	
-	
-		把本地仓库和远程仓库关联，上传代码
+	    Vue.use(ElementUI);
+	e.安装express应用生成器
+	npm install express-generator -g
+			cd server 进入server目录
+			执行 express
+			npm install 安装依赖
+			安装mongoose
+			npm install --save mongoose
+	现在项目目录结构
+		   	添加readme.md
+	f.把项目上传到仓库中
 		
-		添加文件
-		git add.
-		git commit -m '第一次提交'
-		推送
-		git push -u origin master
-
-		创建文件	touch .gitignore
-		编辑文件	vim .gitinore
-		输入 i  进行编辑	Esc退出输入
-		退出	Shift+zz  :wq
-		查看 cat .gitinore
+		
+			把本地仓库和远程仓库关联，上传代码
+			
+			添加文件
+			git add.
+			git commit -m '第一次提交'
+			推送
+			git push -u origin master
+	
+			创建文件	touch .gitignore
+			编辑文件	vim .gitinore
+			输入 i  进行编辑	Esc退出输入
+			退出	Shift+zz  :wq
+			查看 cat .gitinore
